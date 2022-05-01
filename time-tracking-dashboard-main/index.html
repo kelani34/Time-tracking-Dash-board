@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+    integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous" />
+
+  <title>Frontend Mentor | Time tracking dashboard</title>
+  <script src="script.js" defer></script>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="top flex-container">
+
+    <div class="title">
+      <div class="flex-item">
+        <div class="title-top">
+          <img src=".\images\image-jeremy.png" alt="Jeremy Robson Profile picture">
+          <div class="title-text">
+            <p>Report for</p>
+          </div>
+          <div class="title-name">
+            <p>Jeremy Robson</p>
+          </div>
+        </div>
+
+        <div class="title-time">
+          <div id="daily" id="daily" class="timestamp a">Daily</div>
+          <div id="weekly" id="weekly" class="timestamp a">Weekly</div>
+          <div id="monthly" id="monthly" class="timestamp a">Monthly</div>
+
+        </div>
+      </div>
+    </div>
+
+
+    <div class="flex-item">
+      <div class="card">
+        <div class="card-img img-clr1">
+          <img src=".\images\icon-work.svg" alt="work image">
+        </div>
+        <div class="card-ii">
+          <div class="card-b">
+            <p>Work</p>
+            <div class="navbar">
+              <div class="dropdown">
+                <button class="dropbtn" style="height: 80px;">
+                  <i class="fa fa-caret-down" style="margin-bottom: 60px;margin-top: 10px;"></i>
+                </button>
+                <div class="dropdown-content" id="myDropdown">
+                  <div id="daily" class="timestamp a">Daily</div>
+                  <div id="weekly" class="timestamp a">Weekly</div>
+                  <div id="monthly" class="timestamp a">Monthly</div>
+                </div>
+              </div>
+            </div>
+            <div class="card-i daily">
+              <div class="card-time"><span id="work-timing">5</span>hrs</div>
+              <!-- daily -->
+              <div class="span">
+                Last week - <span id="work-lst-tmg">7</span>hrs
+              </div>
+              <!-- daily -->
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- </div> -->
+
+    <!-- <div class="flex-item"> -->
+      <div class="card">
+        <div class="card-img img-clr2">
+          <img src=".\images\icon-play.svg" alt="work image">
+        </div>
+        <div class="card-ii">
+          <div class="card-b">
+            <p>Play</p>
+            <div class="navbar">
+              <div class="dropdown">
+                <button class="dropbtn" style="height: 80px;">
+                  <i class="fa fa-caret-down" style="margin-bottom: 60px;margin-top: 10px;"></i>
+                </button>
+                <div class="dropdown-content" id="myDropdown">
+                  <div id="daily" class="timestamp a">Daily</div>
+                  <div id="weekly" class="timestamp a">Weekly</div>
+                  <div id="monthly" class="timestamp a">Monthly</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-i  daily">
+            <div class="card-time"><span id="play-timing"></span>1hr</div>
+            <!-- daily -->
+            <div class="span">
+              Last week - <span id="play-lst-tmg">2</span>hrs
+            </div>
+            <!-- daily -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex-item">
+      <div class="card">
+        <div class="card-img img-clr3">
+          <img src=".\images\icon-study.svg" alt="work image">
+        </div>
+        <div class="card-ii">
+          <div class="card-b">
+            <p>Study</p>
+            <div class="navbar">
+              <div class="dropdown">
+                <button class="dropbtn" style="height: 80px;">
+                  <i class="fa fa-caret-down" style="margin-bottom: 60px;margin-top: 10px;"></i>
+                </button>
+                <div class="dropdown-content" id="myDropdown">
+                  <div id="daily" class="timestamp a">Daily</div>
+                  <div id="weekly" class="timestamp a">Weekly</div>
+                  <div id="monthly" class="timestamp a">Monthly</div>
+                </div>
+              </div>
+            </div>
+            <div class="card-i  daily">
+              <div class="card-time"><span id="study-timing">0</span>hrs</div>
+              <!-- daily -->
+              <div class="span">
+                Last week - <span id="study-lst-tmg">1</span>hrs
+              </div>
+              <!-- daily -->
+            </div>
+
+          </div>
+        </div>
+      </div>
+    <!-- </div> -->
+
+
+    <!-- <div class="flex-item"> -->
+      <div class="card">
+        <div class="card-img img-clr4">
+          <img src=".\images\icon-exercise.svg" alt="work image">
+        </div>
+        <div class="card-ii">
+          <div class="card-b">
+            <p>Exercise</p>
+            <div class="navbar">
+              <div class="dropdown">
+                <button class="dropbtn" style="height: 80px;">
+                  <i class="fa fa-caret-down" style="margin-bottom: 60px;margin-top: 10px;"></i>
+                </button>
+                <div class="dropdown-content" id="myDropdown">
+                  <div id="daily" class="timestamp a">Daily</div>
+                  <div id="weekly" class="timestamp a">Weekly</div>
+                  <div id="monthly" class="timestamp a">Monthly</div>
+                </div>
+              </div>
+            </div>
+            <div class="card-i  daily">
+              <div class="card-time"><span id="exercise-timing"></span>1hr</div>
+              <!-- daily -->
+              <div class="span">
+                Last week - <span id="exercise-lst-tmg">1</span>hrs
+              </div>
+              <!-- daily -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex-item">
+      <div class="card">
+        <div class="card-img img-clr5">
+          <img src=".\images\icon-social.svg" alt="work image">
+        </div>
+        <div class="card-ii">
+          <div class="card-b">
+            <p>Social</p>
+            <div class="navbar">
+              <div class="dropdown">
+                <button class="dropbtn" style="height: 80px;">
+                  <i class="fa fa-caret-down" style="margin-bottom: 60px;margin-top: 10px;"></i>
+                </button>
+                <div class="dropdown-content" id="myDropdown">
+                  <div id="daily" class="timestamp a">Daily</div>
+                  <div id="weekly" class="timestamp a">Weekly</div>
+                  <div id="monthly" class="timestamp a">Monthly</div>
+                </div>
+              </div>
+            </div>
+            <div class="card-i  daily">
+              <div class="card-time"><span id="social-timing"></span>1hr</div>
+              <!-- daily -->
+              <div class="span">
+                Last week - <span id="social-lst-tmg">3</span>hrs
+              </div>
+              <!-- daily -->
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- </div> -->
+
+    <!-- <div class="flex-item"> -->
+      <div class="card">
+        <div class="card-img img-clr6">
+          <img src=".\images\icon-self-care.svg" alt="work image">
+        </div>
+        <div class="card-ii">
+          <div class="card-b">
+            <p>Self care</p>
+            <div class="navbar">
+              <div class="dropdown">
+                <button class="dropbtn" style="height: 80px;">
+                  <i class="fa fa-caret-down" style="margin-bottom: 60px;margin-top: 10px;"></i>
+                </button>
+                <div class="dropdown-content" id="myDropdown">
+                  <div id="daily" class="timestamp a">Daily</div>
+                  <div id="weekly" class="timestamp a">Weekly</div>
+                  <div id="monthly" class="timestamp a">Monthly</div>
+                </div>
+              </div>
+            </div>
+            <div class="card-i  daily">
+              <div class="card-time"><span id="self-care-timing">0</span>hrs</div>
+              <!-- daily -->
+              <div class="span">
+                Last week <span id="self-care-lst-tmg-">1hr</span>
+              </div>
+              <!-- daily -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <div href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</div>.
+    Coded by <div>Your Name Here</div>.
+  </div>
+</body>
+
+</html>
